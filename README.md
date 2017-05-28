@@ -9,7 +9,7 @@
 pip install requests
 pip install BeautifulSoup
 pip install bs4
-pip install mysql-python
+pip install MySQL-python
 ```
 
 其中新闻伪原创没加在Python里，可以自己定义进去
