@@ -51,4 +51,4 @@ PHP读取文章可使用函数stripslashes进行反转义：
 ```
 	$content = str_replace('\n','',content); //替换换行
 	$content = stripslashes($row['content']);//反转义 /
-	```
+```
