@@ -45,4 +45,10 @@ die(json_encode(array ('content'=>str_reWords($_POST['content']))));
 善良_善意
 好人_不坏的人
 ```
+Python将文章存入数据库时会转义HTML
 
+PHP读取文章可使用函数stripslashes进行反转义：
+```
+	$content = str_replace('\n','',content); //替换换行
+	$content = stripslashes($row['content']);//反转义 /
+	```
