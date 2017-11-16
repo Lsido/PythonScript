@@ -25,7 +25,7 @@ http://api2.jiakaobaodian.com/api/open/question/list-by-tag.htm?_r=1119220172370
 http://api2.jiakaobaodian.com/api/open/question/question-list.htm?_r=19604815519963578102&page=1&limit=25&questionIds=909400
 ```
 返回Json如下:
-![Image text](https://image.lsido.com/FpwSODHHxlxxFcKCaxf90Kl5JID7)
+![Image text](https://raw.githubusercontent.com/Lsido/PythonScript/master/images/ResJson.png)
 
 
 # News.py
