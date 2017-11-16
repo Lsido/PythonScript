@@ -1,3 +1,33 @@
+# DrivingSubject.py
+
+(2017.11.16)
+
+基于Python2.7爬取驾考宝典所有题目爬虫
+
+安装好拓展后，使用方法如下（控制台输入）:
+```
+python DrivingSubject.py 小车 科目一
+```
+
+加入更新判断,linux下可放入crontab定时执行,通过判断题目达到更新目的
+
+具体看代码
+
+备注:
+
+驾考宝典获取题目ID接口:
+```
+http://api2.jiakaobaodian.com/api/open/question/list-by-tag.htm?_r=111922017237088616081&cityCode=511300&page=1&limit=25&course=kemu1&tagId=2&carType=car&_=0.5066246786512065
+```
+
+根据ID读取题目接口:
+```
+http://api2.jiakaobaodian.com/api/open/question/question-list.htm?_r=19604815519963578102&page=1&limit=25&questionIds=909400
+```
+返回Json如下:
+![Image text](https://image.lsido.com/FpwSODHHxlxxFcKCaxf90Kl5JID7)
+
+
 # News.py
 
 基于Python2.7写的单线程爬搜狐新闻列表批量存入数据库
