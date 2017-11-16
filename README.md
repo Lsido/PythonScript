@@ -1,3 +1,21 @@
+# DrivingSubject.py
+
+(2017.11.16)
+
+基于Python2.7爬取驾考宝典所有题目爬虫
+
+安装好拓展后，使用方法如下（控制台输入）:
+```
+python DrivingSubject.py 小车 科目一
+```
+
+加入更新判断,linux下可放入crontab定时执行,通过判断题目达到更新目的
+
+具体看代码
+
+
+
+
 # News.py
 
 基于Python2.7写的单线程爬搜狐新闻列表批量存入数据库
