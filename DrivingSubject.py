@@ -1,4 +1,6 @@
 # coding=utf-8
+# 驾考宝典题库爬虫 lsido.com
+# 爬取各类车型科目一、科目四所有题，带更新
 import requests
 import re
 from random import choice
