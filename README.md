@@ -2,14 +2,14 @@
 
 基于Python2.7写的单线程爬搜狐新闻列表批量存入数据库
 
-新闻列表：http://wei.sohu.com/roll/ 大概900个页码，每页40*900 约36000篇新闻
+新闻列表：http://wei.sohu.com/roll/ 大概100个页码，每页40*100 约4000篇新闻
 
 使用需安装几个拓展
 ```
 pip install requests
 pip install BeautifulSoup
 pip install bs4
-pip install mysql-python
+pip install MySQL-python
 ```
 
 其中新闻伪原创没加在Python里，可以自己定义进去
@@ -45,4 +45,14 @@ die(json_encode(array ('content'=>str_reWords($_POST['content']))));
 善良_善意
 好人_不坏的人
 ```
+Python将文章存入数据库时会转义HTML
 
+PHP读取文章可使用函数stripslashes进行反转义：
+```
+	$content = str_replace('\n','',content); //替换换行
+	$content = stripslashes($row['content']);//反转义 /
+```
+
+拓展：
+
+可根据页面详情抓取{腾讯新闻}{百度新闻}{网易新闻}列表
